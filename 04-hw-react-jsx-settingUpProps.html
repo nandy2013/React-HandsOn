@@ -1,0 +1,18 @@
+<div id="root"></div>
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin>
+</script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel">
+  const rootElement = document.getElementById('root')
+
+  //Setting up props object
+  const props = {
+    className: 'container',
+    children: 'Hellow World'
+  }
+  const element = <div {...props}/>  
+
+  console.log(element)  
+  ReactDOM.render(element, rootElement)
+</script>
